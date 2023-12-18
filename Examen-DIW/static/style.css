@@ -1,0 +1,212 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Continuar desde aqui... */
+div.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+div.container aside {
+  display: flex;
+  flex-direction: column;
+  width: 13rem;
+  height: 100vh;
+  background-color: #002858;
+  color: white;
+  text-align: center;
+  float: left;
+}
+div.container aside p {
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+div.container aside div.separator {
+  height: 1px;
+  background-color: white;
+  margin: 10px;
+}
+div.container main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 40, 88, 0.6666666667);
+  width: 100%;
+}
+div.container main h1 {
+  color: #ffc836;
+  font-size: 3.5rem;
+}
+div.container main p {
+  padding: 20px;
+  color: #ffc836;
+  font-size: 1.5rem;
+}
+div.container main table {
+  border: solid #ffc836;
+  border-collapse: collapse;
+}
+div.container main table thead {
+  background-color: #ffc836;
+  color: #002858;
+}
+div.container main table thead tr {
+  border: solid 3px #ffc836;
+}
+div.container main table td, div.container main table th {
+  border: solid 2px #ffc836;
+  padding: 1rem 2rem;
+}
+div.container main table th {
+  color: #002858;
+}
+div.container main table tr {
+  color: #ffc836;
+}
+div.container main table td {
+  font-size: 1;
+}
+div.container main table td#tarifa {
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: #ffc836;
+  font-size: 1rem;
+  color: #002858;
+}
+div.container main table tr:hover {
+  background-color: #ffc836;
+  color: #002858;
+}
+div.container main table td:hover button {
+  background-color: #ffc836;
+  color: #002858;
+}
+
+.dialogBorrar {
+  border: solid 1px;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.dialogBorrar .buttons input {
+  background-color: #ffc836;
+  padding: 5px;
+}
+.dialogBorrar .buttons button {
+  padding: 5px;
+}
+.dialogBorrar p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.dialogBorrar span {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+.dialogBorrar .content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.dialogBorrar {
+  border: solid 1px;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.dialogBorrar .buttons input {
+  background-color: #ffc836;
+  padding: 5px;
+}
+.dialogBorrar .buttons button {
+  padding: 5px;
+}
+.dialogBorrar p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.dialogBorrar span {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+.dialogBorrar .content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.dialogEntrada {
+  border: solid 1px;
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.dialogEntrada .buttons input {
+  background-color: #ffc836;
+  padding: 5px;
+}
+.dialogEntrada .buttons button {
+  padding: 5px;
+}
+.dialogEntrada p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.dialogEntrada span {
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+.dialogEntrada .content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid black;
+  padding: 50px;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

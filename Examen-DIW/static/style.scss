@@ -1,0 +1,254 @@
+$azul : #002858;
+$azul2 : #002858aa;
+$amarillo: #ffc836;
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Continuar desde aqui... */
+
+div.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: 13rem;
+        height: 100vh;
+        background-color: $azul;
+        color: white;
+        text-align: center;
+        float: left;
+    
+        p{
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+    
+        div.separator{
+            height:1px;
+            background-color:white;
+            margin:10px;            
+        }
+
+        
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $azul2;
+        width: 100%;
+
+        h1{
+            color: $amarillo;
+            font-size: 3.5rem;
+        }
+        p{
+            padding: 20px;
+            color: $amarillo;
+            font-size: 1.5rem;
+        }
+    
+        table{
+            border:solid $amarillo;
+            border-collapse: collapse;
+        
+            thead{
+                background-color: $amarillo;
+                color: $azul;
+                
+                tr{
+                    border:solid 3px $amarillo;
+                }
+        
+            }
+        
+            td,th{
+                border:solid 2px $amarillo;
+                padding:1rem 2rem;
+            }
+            th{
+                color: $azul;
+            }
+            tr{
+                color: $amarillo;
+            }
+             
+            td{
+                
+                font-size: 1;
+
+                &#tarifa{
+                    border: solid 1px;
+                    border-radius: 10px;
+                    background-color: $amarillo;
+                    font-size: 1rem;
+                    color: $azul;
+                }
+            }
+        
+        
+            tr:hover{
+                background-color: $amarillo;
+                color: $azul;
+            }
+            td:hover
+
+            button{
+                background-color: $amarillo;
+                color: $azul;
+            }
+        
+        }
+
+
+        
+    }
+    
+}
+
+.dialogBorrar{
+    border: solid 1px;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .buttons{
+       
+        input{
+            background-color: $amarillo;
+            padding: 5px;
+        }
+        button{
+            padding:5px;
+        }
+    }
+    p{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    span{
+        font-weight: normal;
+        font-size: 1.4rem;
+    }
+   
+  .content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    padding: 50px;
+    justify-content: space-between
+     
+  }
+}
+.dialogBorrar{
+    border: solid 1px;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .buttons{
+       
+        input{
+            background-color: $amarillo;
+            padding: 5px;
+        }
+        button{
+            padding:5px;
+        }
+    }
+    p{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    span{
+        font-weight: normal;
+        font-size: 1.4rem;
+    }
+   
+  .content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    padding: 50px;
+    justify-content: space-between
+     
+  }
+}
+
+.dialogEntrada{
+    border: solid 1px;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .buttons{
+       
+        input{
+            background-color: $amarillo;
+            padding: 5px;
+        }
+        button{
+            padding:5px;
+        }
+    }
+    p{
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    span{
+        font-weight: normal;
+        font-size: 1.4rem;
+    }
+   
+  .content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    padding: 50px;
+    justify-content: space-between
+     
+  }
+}
